@@ -211,7 +211,6 @@ select {
 textarea {
 
     resize: none
-
 }
 
 
@@ -289,7 +288,6 @@ footer .info {
     height: 120px;
 
     background-color: #f2f1f1
-
 }
 
 
@@ -299,7 +297,6 @@ footer .info .box {
     padding-top: 15px;
 
     font-size: 14px
-
 }
 
 
@@ -311,7 +308,6 @@ footer .info p {
     padding: 20px 0;
 
     font-size: 16px
-
 }
 
 
@@ -319,7 +315,6 @@ footer .info p {
 footer .info .box img {
 
     padding-right: 10px
-
 }
 
 
@@ -393,7 +388,6 @@ footer .copy {
     top: 15px;
 
     left: 36%
-
 }
 
 
@@ -403,7 +397,6 @@ footer .copy {
     font-size: 16px;
 
     padding-top: 32px
-
 }
 
 
@@ -688,7 +681,7 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
 .index .about .video .img-responsive {
 
-    margin: 0 auto;
+    width: 900px;
 
 }
 
@@ -712,9 +705,9 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
     top: 0;
 
-    left: 35px;
+    left: 0;
 
-    width: 1100px;
+    width: 900px;
 
     height: 100%;
 
@@ -742,7 +735,7 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
 .index .about .box {
 
-    padding: 30px 0;
+    padding: 15px 0;
 
     display: flex;
 
@@ -754,7 +747,7 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
 .index .about .box p {
 
-    font-size: 18px;
+    font-size: 16px;
 
     color: #444;
 
@@ -763,6 +756,9 @@ header .navbar-fixed-top .navbar-nav>li>a {
 }
 
 
+.index .about .box .imgs img {
+    margin-left: 40px;
+}
 
 .index .about .about-contact {
 
@@ -840,13 +836,13 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
     color: #29366b;
 
-    top: 50% !important;
+    top: 46% !important;
 
     transform: translateY(-50%);
 
     font-weight: 600 !important;
 
-    font-size: 30px !important;
+    font-size: 46px !important;
 
 }
 
@@ -1137,7 +1133,10 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
 }
 
-
+.index .partner .box-img {
+    margin-top: 30px;
+    box-shadow: 0px 5px 26px 0px rgba(0, 0, 0, 0.26);
+}
 
 .index .partner .wap-partner {
 
@@ -1444,7 +1443,6 @@ header .navbar-fixed-top .navbar-nav>li>a {
     -o-transform: translateY(-4px);
 
     transform: translateY(-4px)
-
 }
 
 
@@ -1872,6 +1870,9 @@ header .navbar-fixed-top .navbar-nav>li>a {
     }
 
 
+    .index .about .digital p {
+        font-size: 36px !important;
+    }
 
     .index .about .digital p>div {
 
@@ -1879,4 +1880,14 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
     }
 
+    .index .about .box .imgs img {
+        margin-left: 0;
+    }
+    .index .partner .wap-partner {
+        padding: 10px 15px;
+    }
+    .index .partner .wap-partner img {
+        box-shadow: 0px 5px 26px 0px;
+      
+    }
 }

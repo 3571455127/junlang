@@ -170,7 +170,7 @@ $(function () {
 
                 value: 100,
 
-                color: "#29366b",
+                color: "#28356b",
 
                 backgroundColor: "#ccc",
 
@@ -198,7 +198,7 @@ $(function () {
 
                 value: 100,
 
-                color: "#29366b",
+                color: "#28356b",
 
                 backgroundColor: "#ccc",
 
@@ -226,7 +226,7 @@ $(function () {
 
                 value: 100,
 
-                color: "#29366b",
+                color: "#28356b",
 
                 backgroundColor: "#ccc",
 
@@ -254,7 +254,7 @@ $(function () {
 
                 value: 100,
 
-                color: "#29366b",
+                color: "#28356b",
 
                 backgroundColor: "#ccc",
 
@@ -282,7 +282,7 @@ $(function () {
 
                 value: 100,
 
-                color: "#29366b",
+                color: "#28356b",
 
                 backgroundColor: "#ccc",
 
