@@ -1244,6 +1244,25 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
 }
 
+.index .contact .left .share li:last-child {
+    position: relative;
+}
+
+.index .contact .left .share .wechat-box {
+    position: absolute;
+    top: -150px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #28356b;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+
+.index .contact .left .share li:last-child:hover .wechat-box {
+    opacity: 1;
+}
 
 
 .index .contact .left .share a {
@@ -1262,19 +1281,7 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
 
 
-.index .contact .left .share li:hover a {
 
-    -webkit-transform: translateY(-4px);
-
-    -moz-transform: translateY(-4px);
-
-    -ms-transform: translateY(-4px);
-
-    -o-transform: translateY(-4px);
-
-    transform: translateY(-4px);
-
-}
 
 
 
@@ -1497,7 +1504,21 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
 
 
-@media screen and (max-width:1024px) {}
+@media screen and (min-width:1024px) {
+    .index .contact .left .share li:hover a {
+
+        -webkit-transform: translateY(-4px);
+
+        -moz-transform: translateY(-4px);
+
+        -ms-transform: translateY(-4px);
+
+        -o-transform: translateY(-4px);
+
+        transform: translateY(-4px);
+
+    }
+}
 
 
 
@@ -1899,5 +1920,34 @@ header .navbar-fixed-top .navbar-nav>li>a {
 
     .index .product .txt .title {
         color: red
+    }
+
+    .index .about .video em {
+        opacity: 1;
+        width: 100%;
+    }
+
+    .index .about .video em img {
+        width: 10%;
+    }
+
+    .index .contact .left .share a {
+        width: 45px;
+        height: 45px;
+    }
+
+    .index .about .about-contact {
+        margin: 15px auto;
+    }
+
+    .index .about .box {
+        position: relative;
+        margin: 20px 0;
+    }
+
+    .index .about .box .txt {
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }

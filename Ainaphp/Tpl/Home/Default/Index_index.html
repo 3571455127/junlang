@@ -1,15 +1,13 @@
+<div class="index">
 
+    <!-- banner  -->
+    <div class="banner">
+        <!-- pc -->
+        <div class="pc-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
 
-    <div class="index">
-
-        <!-- banner  -->
-        <div class="banner">
-            <!-- pc -->
-            <div class="pc-banner">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-
-          <YP:list name="slide_data" id="r" limit="5" field="*" where="fid = 1" key="n">
+                    <YP:list name="slide_data" id="r" limit="5" field="*" where="fid = 1" key="n">
                         <!-- start -->
                         <div class="swiper-slide">
                             <a href="#contant">
@@ -17,23 +15,23 @@
                             </a>
                         </div>
                         <!-- end -->
-          </YP:list>
-
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-btn">
-                        <div class="swiper-button-prev swiper-button-white"></div>
-                        <div class="swiper-button-next swiper-button-white"></div>
-                    </div>
+                    </YP:list>
 
                 </div>
-            </div>
-            <!-- wap -->
-            <div class="wap-banner">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-btn">
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                </div>
 
-          <YP:list name="slide_data" id="r" limit="5" field="*" where="fid = 2" key="n">
+            </div>
+        </div>
+        <!-- wap -->
+        <div class="wap-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <YP:list name="slide_data" id="r" limit="5" field="*" where="fid = 2" key="n">
                         <!-- start -->
                         <div class="swiper-slide">
                             <a href="#contant">
@@ -41,36 +39,37 @@
                             </a>
                         </div>
                         <!-- end -->
-          </YP:list>
+                    </YP:list>
 
-                    </div>
-                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div>
+        <a id="about"></a>
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <?php getcatvar('page','id = 74','cont');?>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- about -->
-        <div>
-            <a id="about"></a>
-            <div class="about">
-                <div class="container">
-                    <div class="row">
-                       <?php getcatvar('page','id = 74','cont');?>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- product -->
-        <div>
-            <a id="product"></a>
-            <div class="product">
-                <div class="container">
-                    <div class="row">
-                        <h3>Product</h3>
-                        <div class="list clearfix">
-<YP:list order="listorder desc" catid="73" id="r" limit="12" field='thumb,title,cont,listorder,id'>
-     <!-- start -->
+    <!-- product -->
+    <div>
+        <a id="product"></a>
+        <div class="product">
+            <div class="container">
+                <div class="row">
+                    <h3>Product</h3>
+                    <div class="list clearfix">
+                        <YP:list order="listorder desc" catid="73" id="r" limit="12"
+                            field='thumb,title,cont,listorder,id'>
+                            <!-- start -->
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="box">
                                     <img src="{$r.thumb}" alt="{$r.title}">
@@ -80,105 +79,107 @@
                                 </div>
                             </div>
                             <!-- end -->
-</YP:list>
-                        </div>
-                        <a class="pro-contact" href="#contact">Contact Us</a>
+                        </YP:list>
                     </div>
+                    <a class="pro-contact" href="#contact">Contact Us</a>
                 </div>
             </div>
         </div>
-
-        <!-- Service -->
-        <div>
-            <a id="service"> </a>
-            <div class="service">
-                <div class="container">
-                    <div class="row">
-                       <?php getcatvar('page','id = 108','cont');?>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Partners -->
-        <div>
-            <a id="partner"> </a>
-            <div class="partner">
-                <div class="container">
-                    <div class="row">
-                        <h3>partner</h3>
-                        <!-- pc -->
-                        <div class="pc-partner">
-                       <?php getcatvar('page','id = 77','cont');?>
-                        </div>
-
-                        <!-- wap-partner -->
-                        <div class="wap-partner">
-                       <?php getcatvar('page','id = 77','pcont');?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- contact -->
-        <div>
-            <a id="contact"></a>
-            <div class="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="clearfix">
-                            <div class="left col-lg-6 col-md-6">
-                                <div class="footer-logo"><img src="__PUBLIC__/www/images/footer-logo.png" alt=""></div>
-                                <div class="ad">{$name}</div>
-                                <div class="info">
-                                    <ul>
-                                        <li>{$address}</li>
-                                        <li>{$phonea}</li>
-                                        <li>{$phone}</li>
-                                        <li>{$fox}</li>
-                                    </ul>
-                                </div>
-                                <div class="share">
-                                    <ul class="clearfix">
-                                        <li class="linkedin"><a href="{$ins}" title=""
-                                                target="_blank" rel="nofollow"><img src="__PUBLIC__/www/images/linkedin.png"
-                                                    alt=""></a>
-                                        </li>
-                                        <li class="twitter"><a href="{$twitter}" title=""
-                                                target="_blank" rel="nofollow"><img src="__PUBLIC__/www/images/twitter.png" alt=""></a>
-                                        </li>
-                                        <li class="whatsapp"><a href="{$Whatsapp}" title=""
-                                                target="_blank" rel="nofollow"><img src="__PUBLIC__/www/images/whatsapp.png"
-                                                    alt=""></a>
-                                        </li>
-                                        <li class="skype"><a href="{$Skype}" title=""
-                                                target="_blank" rel="nofollow"><img src="__PUBLIC__/www/images/skype.png" alt=""></a>
-                                        </li>
-                                        <li class="youtube"><a href="{$youtube}" title=""
-                                                target="_blank" rel="nofollow"><img src="__PUBLIC__/www/images/youtube.png" alt=""></a>
-                                        </li>
-                                        <li class="facebook"><a href="{$facebook}" title=""
-                                                target="_blank" rel="nofollow"><img src="__PUBLIC__/www/images/facebook.png"
-                                                    alt=""></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="right col-lg-6 col-md-6">
-                                <form class="clearfix" name="form" method="post" onsubmit="return beforeSubmit2(this);" action="index.php?g=Home&a=message">
-                                    <input type="text" placeholder="* Name" name="name">
-                                    <input type="text" placeholder="* Emai" name="email">
-                                    <input type="text" placeholder="Phone Number" name="phone">
-                                    <textarea placeholder="* Message" name="message"></textarea>
-                                    <input type="submit" value="Send" class="submit-btn">
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 
+    <!-- Service -->
+    <div>
+        <a id="service"> </a>
+        <div class="service">
+            <div class="container">
+                <div class="row">
+                    <?php getcatvar('page','id = 108','cont');?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Partners -->
+    <div>
+        <a id="partner"> </a>
+        <div class="partner">
+            <div class="container">
+                <div class="row">
+                    <h3>partner</h3>
+                    <!-- pc -->
+                    <div class="pc-partner">
+                        <?php getcatvar('page','id = 77','cont');?>
+                    </div>
+
+                    <!-- wap-partner -->
+                    <div class="wap-partner">
+                        <?php getcatvar('page','id = 77','pcont');?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div>
+        <a id="contact"></a>
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="clearfix">
+                        <div class="left col-lg-6 col-md-6">
+                            <div class="footer-logo"><img src="__PUBLIC__/www/images/footer-logo.png" alt=""></div>
+                            <div class="ad">{$name}</div>
+                            <div class="info">
+                                <ul>
+                                    <li>{$address}</li>
+                                    <li>{$phonea}</li>
+                                    <li>{$phone}</li>
+                                    <li>{$fox}</li>
+
+                                </ul>
+                            </div>
+                            <div class="share">
+                                <ul class="clearfix">
+                                    <li class="linkedin"><a href="{$ins}" title="" target="_blank" rel="nofollow"><img
+                                                src="__PUBLIC__/www/images/linkedin.png" alt=""></a>
+                                    </li>
+                                    <li class="twitter"><a href="{$twitter}" title="" target="_blank"
+                                            rel="nofollow"><img src="__PUBLIC__/www/images/twitter.png" alt=""></a>
+                                    </li>
+                                    <li class="whatsapp"><a href="{$Whatsapp}" title="" target="_blank"
+                                            rel="nofollow"><img src="__PUBLIC__/www/images/whatsapp.png" alt=""></a>
+                                    </li>
+                                    <li class="skype"><a href="{$Skype}" title="" target="_blank" rel="nofollow"><img
+                                                src="__PUBLIC__/www/images/skype.png" alt=""></a>
+                                    </li>
+                                    <li class="youtube"><a href="{$youtube}" title="" target="_blank"
+                                            rel="nofollow"><img src="__PUBLIC__/www/images/youtube.png" alt=""></a>
+                                    </li>
+                                    <li class="facebook"><a href="{$facebook}" title="" target="_blank"
+                                            rel="nofollow"><img src="__PUBLIC__/www/images/facebook.png" alt=""></a>
+                                    </li>
+                                    <li><a href="javascript:;"><img src="__PUBLIC__/www/images/wechat.png"
+                                                alt="wechat"></a>
+                                        <div class="wechat-box"><img src="__PUBLIC__/www/images/code.png" alt=""></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right col-lg-6 col-md-6">
+                            <form class="clearfix" name="form" method="post" onsubmit="return beforeSubmit2(this);"
+                                action="index.php?g=Home&a=message">
+                                <input type="text" placeholder="* Name" name="name">
+                                <input type="text" placeholder="* Emai" name="email">
+                                <input type="text" placeholder="Phone Number" name="phone">
+                                <textarea placeholder="* Message" name="message"></textarea>
+                                <input type="submit" value="Send" class="submit-btn">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
